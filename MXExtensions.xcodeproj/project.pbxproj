@@ -11,6 +11,12 @@
 		2D86158B1CD5EB4C0014615B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86158A1CD5EB4C0014615B /* AppDelegate.m */; };
 		2D86158D1CD5EB4C0014615B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D86158C1CD5EB4C0014615B /* Assets.xcassets */; };
 		2D8615901CD5EB4C0014615B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D86158E1CD5EB4C0014615B /* LaunchScreen.storyboard */; };
+		2D8615991CD5EB570014615B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8615981CD5EB570014615B /* MainViewController.m */; };
+		2D8615A61CD5EB9A0014615B /* NSString+MXExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86159D1CD5EB9A0014615B /* NSString+MXExtensions.m */; };
+		2D8615A71CD5EB9A0014615B /* UIApplication+MXExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86159F1CD5EB9A0014615B /* UIApplication+MXExtensions.m */; };
+		2D8615A81CD5EB9A0014615B /* UIColor+MXExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8615A11CD5EB9A0014615B /* UIColor+MXExtensions.m */; };
+		2D8615A91CD5EB9A0014615B /* UIImage+MXExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8615A31CD5EB9A0014615B /* UIImage+MXExtensions.m */; };
+		2D8615AA1CD5EB9A0014615B /* UIView+MXExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8615A51CD5EB9A0014615B /* UIView+MXExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,19 @@
 		2D86158C1CD5EB4C0014615B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D86158F1CD5EB4C0014615B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D8615911CD5EB4C0014615B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D8615971CD5EB570014615B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2D8615981CD5EB570014615B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2D86159B1CD5EB9A0014615B /* MXExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXExtensions.h; sourceTree = "<group>"; };
+		2D86159C1CD5EB9A0014615B /* NSString+MXExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MXExtensions.h"; sourceTree = "<group>"; };
+		2D86159D1CD5EB9A0014615B /* NSString+MXExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MXExtensions.m"; sourceTree = "<group>"; };
+		2D86159E1CD5EB9A0014615B /* UIApplication+MXExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MXExtensions.h"; sourceTree = "<group>"; };
+		2D86159F1CD5EB9A0014615B /* UIApplication+MXExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MXExtensions.m"; sourceTree = "<group>"; };
+		2D8615A01CD5EB9A0014615B /* UIColor+MXExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MXExtensions.h"; sourceTree = "<group>"; };
+		2D8615A11CD5EB9A0014615B /* UIColor+MXExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MXExtensions.m"; sourceTree = "<group>"; };
+		2D8615A21CD5EB9A0014615B /* UIImage+MXExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MXExtensions.h"; sourceTree = "<group>"; };
+		2D8615A31CD5EB9A0014615B /* UIImage+MXExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MXExtensions.m"; sourceTree = "<group>"; };
+		2D8615A41CD5EB9A0014615B /* UIView+MXExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MXExtensions.h"; sourceTree = "<group>"; };
+		2D8615A51CD5EB9A0014615B /* UIView+MXExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MXExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +72,11 @@
 		2D8615851CD5EB4C0014615B /* MXExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				2D86159A1CD5EB9A0014615B /* MXExtensions */,
 				2D8615891CD5EB4C0014615B /* AppDelegate.h */,
 				2D86158A1CD5EB4C0014615B /* AppDelegate.m */,
+				2D8615971CD5EB570014615B /* MainViewController.h */,
+				2D8615981CD5EB570014615B /* MainViewController.m */,
 				2D86158C1CD5EB4C0014615B /* Assets.xcassets */,
 				2D86158E1CD5EB4C0014615B /* LaunchScreen.storyboard */,
 				2D8615911CD5EB4C0014615B /* Info.plist */,
@@ -69,6 +91,24 @@
 				2D8615871CD5EB4C0014615B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D86159A1CD5EB9A0014615B /* MXExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D86159B1CD5EB9A0014615B /* MXExtensions.h */,
+				2D86159C1CD5EB9A0014615B /* NSString+MXExtensions.h */,
+				2D86159D1CD5EB9A0014615B /* NSString+MXExtensions.m */,
+				2D86159E1CD5EB9A0014615B /* UIApplication+MXExtensions.h */,
+				2D86159F1CD5EB9A0014615B /* UIApplication+MXExtensions.m */,
+				2D8615A01CD5EB9A0014615B /* UIColor+MXExtensions.h */,
+				2D8615A11CD5EB9A0014615B /* UIColor+MXExtensions.m */,
+				2D8615A21CD5EB9A0014615B /* UIImage+MXExtensions.h */,
+				2D8615A31CD5EB9A0014615B /* UIImage+MXExtensions.m */,
+				2D8615A41CD5EB9A0014615B /* UIView+MXExtensions.h */,
+				2D8615A51CD5EB9A0014615B /* UIView+MXExtensions.m */,
+			);
+			path = MXExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8615A71CD5EB9A0014615B /* UIApplication+MXExtensions.m in Sources */,
+				2D8615AA1CD5EB9A0014615B /* UIView+MXExtensions.m in Sources */,
 				2D86158B1CD5EB4C0014615B /* AppDelegate.m in Sources */,
+				2D8615A91CD5EB9A0014615B /* UIImage+MXExtensions.m in Sources */,
+				2D8615991CD5EB570014615B /* MainViewController.m in Sources */,
+				2D8615A61CD5EB9A0014615B /* NSString+MXExtensions.m in Sources */,
+				2D8615A81CD5EB9A0014615B /* UIColor+MXExtensions.m in Sources */,
 				2D8615881CD5EB4C0014615B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
