@@ -89,7 +89,7 @@
  *
  *  @return 分割线的高度
  */
-CG_INLINE CGFloat MXLRCSeparatorHeight()
+CG_INLINE CGFloat MXSeparatorHeight()
 {
     static CGFloat separatorHeight;
     static dispatch_once_t onceToken;
