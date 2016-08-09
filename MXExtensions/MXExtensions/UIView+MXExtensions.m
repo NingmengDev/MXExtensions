@@ -266,4 +266,35 @@ static const UIViewAutoresizing kAutoresizingMaskWH = UIViewAutoresizingFlexible
     }
 }
 
+#pragma mark - NSLayoutConstraint
+
+- (NSLayoutConstraint *)constraint:(NSLayoutAttribute)a1 cEqualTo:(CGFloat)constant
+{
+    return [self constraint:a1 equalTo:nil c:constant];
+}
+
+- (NSLayoutConstraint *)constraint:(NSLayoutAttribute)a1 equalTo:(UIView *)view
+{
+    return [self constraint:a1 equalTo:view c:0.0];
+}
+
+- (NSLayoutConstraint *)constraint:(NSLayoutAttribute)a1 equalTo:(UIView *)view a:(NSLayoutAttribute)a2
+{
+    return [self constraint:a1 equalTo:view a:a2 c:0.0];
+}
+
+- (NSLayoutConstraint *)constraint:(NSLayoutAttribute)a1 equalTo:(UIView *)view c:(CGFloat)constant
+{
+    NSLayoutAttribute a2 = view ? a1 : NSLayoutAttributeNotAnAttribute;
+    return [self constraint:a1 equalTo:view a:a2 c:constant];
+}
+
+- (NSLayoutConstraint *)constraint:(NSLayoutAttribute)a1 equalTo:(UIView *)view a:(NSLayoutAttribute)a2 c:(CGFloat)constant
+{
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self attribute:a1 relatedBy:NSLayoutRelationEqual toItem:view attribute:a2 multiplier:1.0 constant:constant];
+    [self.superview addConstraint:constraint];
+    
+    return constraint;
+}
+
 @end

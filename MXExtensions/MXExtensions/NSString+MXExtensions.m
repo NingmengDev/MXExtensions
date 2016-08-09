@@ -83,6 +83,16 @@
 {
     NSString *phoneNumberRegex = @"^[1][3-8]\\d{9}$";
     return [self mx_isMatchesPredicate:phoneNumberRegex];
+
+/*
+    if (self.length > 0) {
+        NSRange range = [self rangeOfString:self];
+        NSTextCheckingResult *result = [NSTextCheckingResult phoneNumberCheckingResultWithRange:range phoneNumber:self];
+        return (result.resultType == NSTextCheckingTypePhoneNumber) ? YES : NO;
+    }
+    
+    return NO;
+ */
 }
 
 /**
@@ -116,10 +126,9 @@
  */
 - (NSString *)mx_stringWithURLEncode
 {
-    NSString *characterSet = @"!$&'()*+,-./:;=?@_~%#[]";
-    NSCharacterSet *allowedCharacters = [NSCharacterSet characterSetWithCharactersInString:characterSet];
-    
-    return [self stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];  
+    NSString *characterSet = @"`#%^{}\"[]|\\<> ";
+    NSCharacterSet *allowedCharacters = [NSCharacterSet characterSetWithCharactersInString:characterSet].invertedSet;
+    return [self stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
 }
 
 /**
